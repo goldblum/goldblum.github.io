@@ -10,6 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>goldblum[at]nyu[dot]edu</p>
+    <a href='https://scholar.google.com/citations?user=pGDKzuUAAAAJ'>Google Scholar</a>
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
