@@ -1,8 +1,8 @@
 ---
 layout: post
 title: A long announcement with details
-date: 2022-09-14
+date: 2023-09-21
 inline: true
 ---
 
-7 papers accepted to NeurIPS 2022  
+9 papers accepted to NeurIPS 2023  

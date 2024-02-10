@@ -1,8 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-07-17
 inline: true
-related_posts: false
 ---
 
-A simple inline announcement.
+[Outstanding Paper Award](https://icml.cc/virtual/2022/poster/17991) at ICML 2022
