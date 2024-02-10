@@ -1,11 +1,8 @@
 ---
-layout: cv
-permalink: /cv/
+layout: page
+permalink: /assets/pdf/website_cv.pdf
 title: cv
-nav: false
-nav_order: 5
-cv_pdf: example_pdf.pdf
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+nav: true
+newtab: true
+nav_order: 3
 ---
