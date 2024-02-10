@@ -4,7 +4,7 @@
 @article{kirchenbauer2024reliability,
   title={On the Reliability of Watermarks for Large Language Models},
   author={Kirchenbauer, John and Geiping, Jonas and Wen, Yuxin and Shu, Manli and Saifullah, Khalid and Kong, Kezhi and Fernando, Kasun and Saha, Aniruddha and Goldblum, Micah and Goldstein, Tom},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2024},
   html={https://openreview.net/forum?id=DEJIDCmWOz},
   abstract={Large language models (LLMs) are now deployed to everyday use and positioned to produce large quantities of text in the coming decade. Machine-generated text may displace human-written text on the internet and has the potential to be used for malicious purposes, such as spearphishing attacks and social media bots. Watermarking is a simple and effective strategy for mitigating such harms by enabling the detection and documentation of LLM-generated text. Yet, a crucial question remains: How reliable is watermarking in realistic settings in the wild? There, watermarked text might be mixed with other text sources, paraphrased by human writers or other language models, and used for applications in a broad number of domains, both social and technical. In this paper, we explore different detection schemes, quantify their power at detecting watermarks, and determine how much machine-generated text needs to be observed in each scenario to reliably detect the watermark. We especially highlight our human study, where we investigate the reliability of watermarking when faced with human paraphrasing. We compare watermark-based detection to other detection strategies, finding overall that watermarking is a reliable solution, especially because of its sample complexity - for all attacks we consider, the watermark evidence compounds the more examples are given, and the watermark is eventually detected.}
@@ -13,7 +13,7 @@
 @article{jain2024neftune,
   title={NEFTune: Noisy Embeddings Improve Instruction Finetuning},
   author={Jain, Neel and Chiang, Ping-yeh and Wen, Yuxin and Kirchenbauer, John and Chu, Hong-Min and Somepalli, Gowthami and Bartoldson, Brian and Kailkhura, Bhavya and Schwarzschild, Avi and Saha, Aniruddha and Goldblum, Micah and Geiping, Jonas and Goldstein, Tom},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2024},
   html={https://openreview.net/forum?id=0bMmZ3fkCk},
   abstract={We show that language model finetuning can be improved, sometimes dramatically, with a simple augmentation. NEFTune adds noise to the embedding vectors during training. Standard finetuning of LLaMA-2-7B using Alpaca achieves 29.79% on AlpacaEval, which rises to 64.69% using noisy embeddings. NEFTune also improves over strong baselines on modern instruction datasets. Models trained with Evol-Instruct see a 10% improvement, with ShareGPT an 8% improvement, and with OpenPlatypus an 8% improvement. Even powerful models further refined with RLHF such as LLaMA-2-Chat benefit from additional training with NEFTune.}
@@ -22,7 +22,7 @@
 @article{bansal2024universal,
   title={Universal guidance for diffusion models},
   author={Bansal, Arpit and Chu, Hong-Min and Schwarzschild, Avi and Sengupta, Soumyadip and Goldblum, Micah and Geiping, Jonas and Goldstein, Tom},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2024},
   html={https://openreview.net/forum?id=pzpWBbnwiJ},
   abstract={Typical diffusion models are trained to accept a particular form of conditioning, most commonly text, and cannot be conditioned on other modalities without retraining. In this work, we propose a universal guidance algorithm that enables diffusion models to be controlled by arbitrary guidance modalities without the need to retrain any use-specific components. We show that our algorithm successfully generates quality images with guidance functions including segmentation, face recognition, object detection, and classifier signals.}
@@ -35,7 +35,7 @@
   year={2023},
   selected = {true},
   html={https://arxiv.org/abs/2310.19909},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   abstract={Neural network based computer vision systems are typically built on a backbone, a pretrained or randomly initialized feature extractor.  Several years ago, the default option was an ImageNet-trained convolutional neural network.  However, the recent past has seen the emergence of countless backbones pretrained using various algorithms and datasets. While this abundance of choice has led to performance increases for a range of systems, it is difficult for practitioners to make informed decisions about which backbone to choose.  Battle of the Backbones (BoB) makes this choice easier by benchmarking a diverse suite of pretrained models, including vision-language models, those trained via self-supervised learning, and the Stable Diffusion backbone, across a diverse set of computer vision tasks ranging from classification to object detection to OOD generalization and more.  Furthermore, BoB sheds light on promising directions for the research community to advance computer vision by illuminating strengths and weakness of existing approaches through a comprehensive analysis conducted on more than 1500 training runs.  While vision transformers (ViTs) and self-supervised learning (SSL) are increasingly popular, we find that convolutional neural networks pretrained in a supervised fashion on large training sets still perform best on most tasks among the models we consider. Moreover, in apples-to-apples comparisons on the same architectures and similarly sized pretraining datasets, we find that SSL backbones are highly competitive, indicating that future works should perform SSL pretraining with advanced architectures and larger pretraining datasets.}
 }
 
@@ -44,7 +44,7 @@
   author={Dooley, Samuel and Sukthanker, Rhea and Dickerson, John P and White, Colin and Hutter, Frank and Goldblum, Micah},
   year={2023},
   selected = {true},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   html={https://arxiv.org/abs/2210.09943},
   abstract={Face recognition systems are widely deployed in safety-critical applications, including law enforcement, yet they exhibit bias across a range of socio-demographic dimensions, such as gender and race.  Conventional wisdom dictates that model biases arise from biased training data.  As a consequence, previous works on bias mitigation largely focused on pre-processing the training data, adding penalties to prevent bias from effecting the model during training, or post-processing predictions to debias them, yet these approaches have shown limited success on hard problems such as face recognition.  In our work, we discover that biases are actually inherent to neural network architectures themselves.  Following this reframing, we conduct the first neural architecture search for fairness, jointly with a search for hyperparameters. Our search outputs a suite of models which Pareto-dominate all other high-performance architectures and existing bias mitigation methods in terms of accuracy and fairness, often by large margins, on the two most widely used datasets for face identification, CelebA and VGGFace2. Furthermore, these models generalize to other datasets and sensitive attributes.}
 }
@@ -54,7 +54,7 @@
   author={Lotfi, Sanae and Izmailov, Pavel and Benton, Gregory and Goldblum, Micah and Wilson, Andrew Gordon},
   year={2022},
   selected = {true},
-  journal={International Conference on Machine Learning (ICML) Outstanding Paper Award,},
+  journal={International Conference on Machine Learning (ICML) Outstanding Paper Award},
   html={https://arxiv.org/abs/2202.11678},
   abstract={How do we compare between hypotheses that are entirely consistent with observations? The marginal likelihood (aka Bayesian evidence), which represents the probability of generating our observations from a prior, provides a distinctive approach to this foundational question, automatically encoding Occam's razor. Although it has been observed that the marginal likelihood can overfit and is sensitive to prior assumptions, its limitations for hyperparameter learning and discrete model comparison have not been thoroughly investigated. We first revisit the appealing properties of the marginal likelihood for learning constraints and hypothesis testing. We then highlight the conceptual and practical issues in using the marginal likelihood as a proxy for generalization. Namely, we show how marginal likelihood can be negatively correlated with generalization, with implications for neural architecture search, and can lead to both underfitting and overfitting in hyperparameter learning. We provide a partial remedy through a conditional marginal likelihood, which we show is more aligned with generalization, and practically valuable for large-scale hyperparameter learning, such as in deep kernel learning.}
 }
@@ -63,7 +63,7 @@
   title={A Performance-Driven Benchmark for Feature Selection in Tabular Deep Learning},
   author={Cherepanova, Valeriia and Somepalli, Gowthami and Geiping, Jonas and Bruss, C. Bayan and Wilson, Andrew Gordon and Goldstein, Tom and Goldblum, Micah},
   year={2023},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   html={https://goldblum.github.io/},
   abstract={Academic tabular benchmarks often contain small sets of curated features. In contrast, data scientists typically collect as many features as possible into their datasets, and even engineer new features from existing ones. To prevent over-fitting in subsequent downstream modeling, practitioners commonly use automated feature selection methods that identify a reduced subset of informative features. Existing benchmarks for tabular feature selection consider classical downstream models, toy synthetic datasets, or do not evaluate feature selectors on the basis of downstream performance. We construct a challenging feature selection benchmark evaluated on downstream neural networks including transformers, using real datasets and multiple methods for generating extraneous features. We also propose an input-gradient-based analogue of LASSO for neural networks that outperforms classical feature selection methods on challenging problems such as selecting from corrupted or second-order features.}
 }
@@ -72,7 +72,7 @@
   title={Simplifying Neural Network Training Under Class Imbalance},
   author={Shwartz-Ziv, Ravid and Goldblum, Micah and Li, Yucen Lily and Bruss, C. Bayan and Wilson, Andrew Gordon},
   year={2023},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   html={https://arxiv.org/abs/2312.02517},
   abstract={Real-world datasets are often highly class-imbalanced, which can adversely impact the performance of deep learning models. The majority of research on training neural networks under class imbalance has focused on specialized loss functions and sampling techniques. Notably, we demonstrate that simply tuning existing components of standard deep learning pipelines, such as the batch size, data augmentation, architecture size, pre-training, optimizer, and label smoothing, can achieve state-of-the-art performance without any specialized loss functions or samplers. We also provide key prescriptions and considerations for training under class imbalance, and an understanding of why imbalance methods succeed or fail.}
 }
@@ -82,7 +82,7 @@
   author={Bansal, Arpit and Borgnia, Eitan and Chu, Hong-Min and Li, Jie S and Kazemi, Hamid and Huang, Furong and Goldblum, Micah and Geiping, Jonas and Goldstein, Tom},
   year={2023},
   selected = {true},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   html={https://arxiv.org/abs/2208.09392},
   abstract={Standard diffusion models involve an image transform -- adding Gaussian noise -- and an image restoration operator that inverts this degradation. We observe that the generative behavior of diffusion models is not strongly dependent on the choice of image degradation, and in fact an entire family of generative models can be constructed by varying this choice. Even when using completely deterministic degradations (e.g., blur, masking, and more), the training and test-time update rules that underlie diffusion models can be easily generalized to create generative models. The success of these fully deterministic models calls into question the community's understanding of diffusion models, which relies on noise in either gradient Langevin dynamics or variational inference, and paves the way for generalized diffusion models that invert arbitrary processes.}
 }
@@ -91,7 +91,7 @@
   title={Why Diffusion Models Memorize and How to Mitigate Copying},
   author={Somepalli, Gowthami and Singla, Vasu and Goldblum, Micah and Geiping, Jonas and Goldstein, Tom},
   year={2023},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   html={https://arxiv.org/abs/2305.20086},
   abstract={ Images generated by diffusion models like Stable Diffusion are increasingly widespread. Recent works and even lawsuits have shown that these models are prone to replicating their training data, unbeknownst to the user. In this paper, we first analyze this memorization problem in text-to-image diffusion models.  While it is widely believed that duplicated images in the training set are responsible for content replication at inference time, we observe that the text conditioning of the model plays a similarly important role. In fact, we see in our experiments that data replication often does not happen for unconditional models, while it is common in the text-conditional case. Motivated by our findings, we then propose several techniques for reducing data replication at inference time by randomizing and augmenting image captions in the training set.}
 }
@@ -100,7 +100,7 @@
   title={Hard Prompts Made Easy: Gradient-Based Discrete Optimization for Prompt Tuning and Discovery},
   author={Wen, Yuxin and Jain, Neel and Kirchenbauer, John and Goldblum, Micah and Geiping, Jonas and Goldstein, Tom},
   year={2023},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   html={https://arxiv.org/abs/2302.03668},
   abstract={The strength of modern generative models lies in their ability to be controlled through text-based prompts. Typical "hard" prompts are made from interpretable words and tokens, and must be hand-crafted by humans. There are also "soft" prompts, which consist of continuous feature vectors. These can be discovered using powerful optimization methods, but they cannot be easily interpreted, re-used across models, or plugged into a text-based interface.  We describe an approach to robustly optimize hard text prompts through efficient gradient-based optimization. Our approach automatically generates hard text-based prompts for both text-to-image and text-to-text applications. In the text-to-image setting, the method creates hard prompts for diffusion models, allowing API users to easily generate, discover, and mix and match image concepts without prior knowledge on how to prompt the model. In the text-to-text setting, we show that hard prompts can be automatically discovered that are effective in tuning LMs for classification.}
 }
@@ -109,7 +109,7 @@
   title={When Do Neural Nets Outperform Boosted Trees on Tabular Data?},
   author={McElfresh, Duncan and Khandagale, Sujay and Valverde, Jonathan and Ramakrishnan, Ganesh and Goldblum, Micah and White, Colin and others},
   year={2023},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   html={https://arxiv.org/abs/2305.02997},
   abstract={Tabular data is one of the most commonly used types of data in machine learning. Despite recent advances in neural nets (NNs) for tabular data, there is still an active discussion on whether or not NNs generally outperform gradient-boosted decision trees (GBDTs) on tabular data, with several recent works arguing either that GBDTs consistently outperform NNs on tabular data, or vice versa. In this work, we take a step back and ask, 'does it matter?' We conduct the largest tabular data analysis to date, by comparing 19 algorithms across 176 datasets, and we find that the 'NN vs. GBDT' debate is overemphasized: for a surprisingly high number of datasets, either the performance difference between GBDTs and NNs is negligible, or light hyperparameter tuning on a GBDT is more important than selecting the best algorithm. Next, we analyze 965 metafeatures to determine what properties of a dataset make NNs or GBDTs better-suited to perform well. For example, we find that GBDTs are much better than NNs at handling skewed feature distributions, heavy-tailed feature distributions, and other forms of dataset irregularities. Our insights act as a guide for practitioners to decide whether or not they need to run a neural net to reach top performance on their dataset.}
 }
@@ -118,7 +118,7 @@
   title={What Can We Learn from Unlearnable Datasets},
   author={Sandoval-Segura, Pedro and Singla, Vasu and Geiping, Jonas and Goldblum, Micah and Goldstein, Tom},
   year={2023},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   html={https://arxiv.org/abs/2305.19254},
   abstract={In an era of widespread web scraping, unlearnable dataset methods have the potential to protect data privacy by preventing deep neural networks from generalizing. But in addition to a number of practical limitations that make their use unlikely, we make a number of findings that call into question their ability to safeguard data. First, it is widely believed that neural networks trained on unlearnable datasets only learn shortcuts, simpler rules that are not useful for generalization. In contrast, we find that networks actually can learn useful features that can be reweighed for high test performance, suggesting that image privacy is not preserved. Unlearnable datasets are also believed to induce learning shortcuts through linear separability of added perturbations. We provide a counterexample, demonstrating that linear separability of perturbations is not a necessary condition. To emphasize why linearly separable perturbations should not be relied upon, we propose an orthogonal projection attack which allows learning from unlearnable datasets published in ICML 2021 and ICLR 2023. Our proposed attack is significantly less complex than recently proposed techniques.}
 }
@@ -127,7 +127,7 @@
 @article{goldblum2020adversarially1,
   title={Adversarially Robust Few-Shot Learning: A Meta-Learning Approach},
   author={Goldblum, Micah and Fowl, Liam and Goldstein, Tom},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   volume={33},
   year={2020},
   selected = {true},
@@ -138,7 +138,7 @@
 @article{goldblum2020unraveling,
   title={Unraveling Meta-Learning: Understanding Feature Representations for Few-Shot Tasks},
   author={Goldblum, Micah and Reich, Steven and Fowl, Liam and Ni, Renkun and Cherepanova, Valeriia and Goldstein, Tom},
-  journal={International Conference on Machine Learning (ICML),},
+  journal={International Conference on Machine Learning (ICML)},
   year={2020},
   selected = {true},
   html={https://arxiv.org/abs/2002.06753},
@@ -148,7 +148,7 @@
 @article{goldblum2019truth,
   title={Truth or Backpropaganda? An Empirical Investigation of Deep Learning Theory},
   author={Goldblum, Micah and Geiping, Jonas and Schwarzschild, Avi and Moeller, Michael and Goldstein, Tom},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2020},
   selected = {true},
   html={https://arxiv.org/abs/1910.00359},
@@ -158,7 +158,7 @@
 @article{goldblum2020adversarially2,
   title={Adversarially Robust Distillation},
   author={Goldblum, Micah and Fowl, Liam and Feizi, Soheil and Goldstein, Tom},
-  journal={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI),},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)},
   year={2020},
   selected = {true},
   html={https://arxiv.org/abs/1905.09747},
@@ -169,7 +169,7 @@
 @article{schwarzschild2021can,
   title={Can You Learn an Algorithm? Generalizing from Easy to Hard Problems with Recurrent Networks},
   author={Schwarzschild, Avi and Borgnia, Eitan and Gupta, Arjun and Huang, Furong and Vishkin, Uzi and Goldblum, Micah and Goldstein, Tom},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2021},
   html={https://arxiv.org/abs/2106.04537},
   selected = {true},
@@ -179,7 +179,7 @@
 @article{shu2020prepare,
   title={Prepare for the Worst: Generalizing across Domain Shifts with Adversarial Batch Normalization},
   author={Shu, Manli and Wu, Zuxuan and Goldblum, Micah and Goldstein, Tom},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2021},
   html={https://arxiv.org/abs/2009.08965},
   abstract={Adversarial training is the industry standard for producing models that are robust to small adversarial perturbations. However, machine learning practitioners need models that are robust to domain shifts that occur naturally, such as changes in the style or illumination of input images. Such changes in input distribution have been effectively modeled as shifts in the mean and variance of deep image features. We adapt adversarial training by adversarially perturbing these feature statistics, rather than image pixels, to produce models that are robust to domain shift. We also visualize images from adversarially crafted distributions. Our method, Adversarial Batch Normalization (AdvBN), significantly improves the performance of ResNet-50 on ImageNet-C (+8.1%), Stylized-ImageNet (+6.7%), and ImageNet-Instagram (+3.9%) over standard training practices. In addition, we demonstrate that AdvBN can also improve generalization on semantic segmentation.}
@@ -188,7 +188,7 @@
 @article{fowl2021adversarial,
   title={Adversarial Examples Make Strong Poisons},
   author={Fowl, Liam and Goldblum, Micah and Chiang, Ping-yeh and Geiping, Jonas and Czaja, Wojtek and Goldstein, Tom},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2021},
   html={https://arxiv.org/abs/2106.10807},
   abstract={The adversarial machine learning literature is largely partitioned into evasion attacks on testing data and poisoning attacks on training data. In this work, we show that adversarial examples, originally intended for attacking pre-trained models, are even more effective for data poisoning than recent methods designed specifically for poisoning. Our findings indicate that adversarial examples, when assigned the original label of their natural base image, cannot be used to train a classifier for natural images. Furthermore, when adversarial examples are assigned their adversarial class label, they are useful for training. This suggests that adversarial examples contain useful semantic content, just with the ``wrong'' labels (according to a network, but not a human). Our method, adversarial poisoning, is substantially more effective than existing poisoning methods for secure dataset release, and we release a poisoned version of ImageNet, ImageNet-P, to encourage research into the strength of this form of data obfuscation.}
@@ -198,7 +198,7 @@
 @article{ni2021data,
   title={Data Augmentation for Meta-Learning},
   author={Ni, Renkun and Goldblum, Micah and Sharaf, Amr and Kong, Kezhi and Goldstein, Tom},
-  journal={International Conference on Machine Learning (ICML),},
+  journal={International Conference on Machine Learning (ICML)},
   year={2021},
   html={https://arxiv.org/abs/2010.07092},
   abstract={Conventional image classifiers are trained by randomly sampling mini-batches of images. To achieve state-of-the-art performance, practitioners use sophisticated data augmentation schemes to expand the amount of training data available for sampling. In contrast, meta-learning algorithms sample support data, query data, and tasks on each training step. In this complex sampling scenario, data augmentation can be used not only to expand the number of images available per class, but also to generate entirely new classes/tasks. We systematically dissect the meta-learning pipeline and investigate the distinct ways in which data augmentation can be integrated at both the image and class levels. Our proposed meta-specific data augmentation significantly improves the performance of meta-learners on few-shot classification benchmarks.}
@@ -207,7 +207,7 @@
 @article{schwarzschild2020just,
   title={Just How Toxic is Data Poisoning? A Unified Benchmark for Backdoor and Data Poisoning Attacks},
   author={Schwarzschild, Avi and Goldblum, Micah and Gupta, Arjun and Dickerson, John P and Goldstein, Tom},
-  journal={International Conference on Machine Learning (ICML),},
+  journal={International Conference on Machine Learning (ICML)},
   year={2021},
   html={https://arxiv.org/abs/2006.12557},
   abstract={Data poisoning and backdoor attacks manipulate training data in order to cause models to fail during inference. A recent survey of industry practitioners found that data poisoning is the number one concern among threats ranging from model stealing to adversarial attacks. However, it remains unclear exactly how dangerous poisoning methods are and which ones are more effective considering that these methods, even ones with identical objectives, have not been tested in consistent or realistic settings. We observe that data poisoning and backdoor attacks are highly sensitive to variations in the testing setup. Moreover, we find that existing methods may not generalize to realistic settings. While these existing works serve as valuable prototypes for data poisoning, we apply rigorous tests to determine the extent to which we should fear them. In order to promote fair comparison in future work, we develop standardized benchmarks for data poisoning and backdoor attacks.}
@@ -216,7 +216,7 @@
 @article{cherepanova2021lowkey,
   title={LowKey: Leveraging Adversarial Attacks to Protect Social Media Users from Facial Recognition},
   author={Cherepanova, Valeriia and Goldblum, Micah and Foley, Harrison and Duan, Shiyuan and Dickerson, John P and Taylor, Gavin and Goldstein, Tom},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2021},
   selected = {true},
   html={https://arxiv.org/abs/2101.07922},
@@ -235,7 +235,7 @@
 @article{pope2021intrinsic,
   title={The Intrinsic Dimension of Images and Its Impact on Learning},
   author={Pope, Phillip and Zhu, Chen and Abdelkader, Ahmed and Goldblum, Micah and Goldstein, Tom},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2021},
   selected = {true},
   html={https://arxiv.org/abs/2104.08894},
@@ -246,7 +246,7 @@
 @inproceedings{borgnia2021strong,
   title={Strong Data Augmentation Sanitizes Poisoning and Backdoor Attacks Without an Accuracy Tradeoff},
   author={Borgnia, Eitan and Cherepanova, Valeriia and Fowl, Liam and Ghiasi, Amin and Geiping, Jonas and Goldblum, Micah and Goldstein, Tom and Gupta, Arjun},
-  booktitle={ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP),},
+  booktitle={ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   pages={3855--3859},
   year={2021},
   organization={IEEE},
@@ -257,7 +257,7 @@
 @inproceedings{chiang2020witchcraft,
   title={Witchcraft: Efficient PGD Attacks with Random Step Size},
   author={Chiang, Ping-Yeh and Geiping, Jonas and Goldblum, Micah and Goldstein, Tom and Ni, Renkun and Reich, Steven and Shafahi, Ali},
-  booktitle={ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP),},
+  booktitle={ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   pages={3747--3751},
   year={2020},
   organization={IEEE},
@@ -268,7 +268,7 @@
 @inproceedings{goldblum2019sheared,
   title={Sheared Multi-Scale Weight Sharing for Multi-Spectral Superresolution},
   author={Goldblum, Micah and Fowl, Liam and Czaja, Wojciech},
-  booktitle={Algorithms, Technologies, and Applications for Multispectral and Hyperspectral Imagery XXV,},
+  booktitle={Algorithms, Technologies, and Applications for Multispectral and Hyperspectral Imagery XXV},
   volume={10986},
   pages={109860X},
   year={2019},
@@ -281,7 +281,7 @@
   title={The Uncanny Similarity of Recurrence and Depth},
   author={Schwarzschild, Avi and Gupta, Arjun and Ghiasi, Amin and Goldblum, Micah and Goldstein, Tom},
   year={2022},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   html={https://arxiv.org/abs/2102.11011},
   abstract={It is widely believed that deep neural networks contain layer specialization, wherein networks extract hierarchical features representing edges and patterns in shallow layers and complete objects in deeper layers. Unlike common feed-forward models that have distinct filters at each layer, recurrent networks reuse the same parameters at various depths. In this work, we observe that recurrent models exhibit the same hierarchical behaviors and the same performance benefits as depth despite reusing the same filters at every recurrence. By training models of various feed-forward and recurrent architectures on several datasets for image classification as well as maze solving, we show that recurrent networks have the ability to closely emulate the behavior of non-recurrent deep models, often doing so with far fewer parameters.}
 }
@@ -290,7 +290,7 @@
   title={The Close Relationship Between Contrastive Learning and Meta-Learning},
   author={Ni, Renkun and Shu, Manli and Souri, Hossein and Goldblum, Micah and Goldstein, Tom},
   year={2022},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   html={https://openreview.net/forum?id=gICys3ITSmj},
   abstract={Contrastive learning has recently taken off as a paradigm for learning from unlabeled data. In this paper, we discuss the close relationship between contrastive learning and meta-learning, and in fact show that contrastive learning can be interpreted as a special case of meta-learning with a certain task distribution. We complement this observation by showing that established meta-learning methods, such as Prototypical Networks, achieve comparable performance to SimCLR when paired with this task distribution. This close relationship can be leveraged by taking established techniques from the meta-learning literature, such as task-based data augmentation, and showing that they benefit contrastive learning as well. These tricks also benefit state-of-the-art  self-supervised learners without using negative pairs such as BYOL, which achieves 94.6% accuracy on CIFAR-10 using a self-supervised ResNet-18 feature extractor trained with our meta-learning tricks.}
   }
@@ -299,7 +299,7 @@
   title={Stochastic Training is Not Necessary for Generalization},
   author={Geiping, Jonas and Goldblum, Micah and Pope, Phil and Moeller, Michael and Goldstein, Tom},
   year={2022},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   html={https://arxiv.org/abs/2109.14119},
   abstract={It is widely believed that the implicit regularization of SGD is fundamental to the impressive generalization behavior we observe in neural networks.  In this work, we demonstrate that non-stochastic full-batch training can achieve comparably strong performance to SGD on CIFAR-10 using modern architectures. To this end, we show that the implicit regularization of SGD can be completely replaced with explicit regularization. Our observations indicate that the perceived difficulty of full-batch training is largely the result of its optimization properties and the disproportionate time and effort spent by the ML community tuning optimizers and hyperparameters for small-batch training.}
 }
@@ -308,7 +308,7 @@
   title={Robbing the Fed: Directly Obtaining Private Data in Federated Learning with Modified Models},
   author={Fowl, Liam and Geiping, Jonas and Czaja, Wojciech and Goldblum, Micah and Goldstein, Tom},
   year={2022},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   html={https://arxiv.org/abs/2110.13057},
   abstract={Federated learning has quickly gained popularity with its promises of increased user privacy and efficiency.  Previous works have shown that federated gradient updates contain information that can be used to approximately recover user data in some situations.  These previous attacks on user privacy have been limited in scope and do not scale to gradient updates aggregated over even a handful of  data  points,  leaving  some  to  conclude  that  data  privacy  is  still  intact  for realistic training regimes.  In this work, we introduce a new threat model based on minimal but malicious modifications of the shared model architecture which enable the server to directly obtain a verbatim copy of user data from gradient updates without solving difficult inverse problems.  Even user data aggregated over large batches – where previous methods fail to extract meaningful content – can be reconstructed by these minimally modified models.}
 }
@@ -317,7 +317,7 @@
   title={Fishing for User Data in Large-Batch Federated Learning via Gradient Magnification},
   author={Wen, Yuxin and Geiping, Jonas and Fowl, Liam and Goldblum, Micah and Goldstein, Tom},
   year={2022},
-  journal={International Conference on Machine Learning (ICML),},
+  journal={International Conference on Machine Learning (ICML)},
   html={https://arxiv.org/abs/2202.00580},
   abstract={Federated learning (FL) has rapidly risen in popularity due to its promise of privacy and efficiency. Previous works have exposed privacy vulnerabilities in the FL pipeline by recovering user data from gradient updates. However, existing attacks fail to address realistic settings because they either 1) require toy settings with very small batch sizes, or 2) require unrealistic and conspicuous architecture modifications. We introduce a new strategy that dramatically elevates existing attacks to operate on batches of arbitrarily large size, and without architectural modifications. Our model-agnostic strategy only requires modifications to the model parameters sent to the user, which is a realistic threat model in many scenarios. We demonstrate the strategy in challenging large-scale settings, obtaining high-fidelity data extraction in both cross-device and cross-silo federated learning.}
 }
@@ -326,7 +326,7 @@
   title={Plug-In Inversion: Model-Agnostic Inversion for Vision with Data Augmentations},
   author={Ghiasi, Amin and Kazemi, Hamid and Reich, Steven and Zhu, Chen and Goldblum, Micah and Goldstein, Tom},
   year={2022},
-  journal={International Conference on Machine Learning (ICML),},
+  journal={International Conference on Machine Learning (ICML)},
   html={https://arxiv.org/abs/2201.12961},
   abstract={Existing techniques for model inversion typically rely on hard-to-tune regularizers, such as total variation or feature regularization, which must be individually calibrated for each network in order to produce adequate images. In this work, we introduce Plug-In Inversion, which relies on a simple set of augmentations and does not require excessive hyper-parameter tuning.  Under our proposed augmentation-based scheme, the same set of augmentation hyper-parameters can be used for inverting a wide range of image classification models, regardless of input dimensions or the architecture. We illustrate the practicality of our approach by inverting Vision Transformers (ViTs) and Multi-Layer Perceptrons (MLPs) trained on the ImageNet dataset, tasks which to the best of our knowledge have not been successfully accomplished by any previous works.}
 }
@@ -335,7 +335,7 @@
   title={Can You Learn the Same Model Twice? Investigating Reproducibility and Double Descent from the Decision Boundary Perspective},
   author={Somepalli, Gowthami and Fowl, Liam and Bansal, Arpit and Ye-Chiang, Ping and Dar, Yehuda and Baraniuk, Richard and Goldblum, Micah and Goldstein, Tom},
   year={2022},
-  journal={Conference on Computer Vision and Pattern Recognition (CVPR) 2022,},
+  journal={Conference on Computer Vision and Pattern Recognition (CVPR)},
   html={https://arxiv.org/abs/2203.08124},
   abstract={We discuss methods for visualizing neural network decision boundaries and decision regions. We use these visualizations to investigate issues related to reproducibility and generalization in neural network training. We observe that changes in model architecture (and its associate inductive bias) cause visible changes in decision boundaries, while multiple runs with the same architecture yield results with strong similarities, especially in the case of wide architectures. We also use decision boundary methods to visualize double descent phenomena. We see that decision boundary reproducibility depends strongly on model width. Near the threshold of interpolation, neural network decision boundaries become fragmented into many small decision regions, and these regions are non-reproducible. Meanwhile, very narrows and very wide networks have high levels of reproducibility in their decision boundaries with relatively few decision regions. We discuss how our observations relate to the theory of double descent phenomena in convex models.}
 }
@@ -343,7 +343,7 @@
 @article{goldblum2021adversarial,
   title={Adversarial Attacks on Machine Learning Systems for High-Frequency Trading},
   author={Goldblum, Micah and Schwarzschild, Avi and Patel, Ankit B and Goldstein, Tom},
-  journal={ACM International Conference on AI in Finance (ICAIF),},
+  journal={ACM International Conference on AI in Finance (ICAIF)},
   year={2021},
   html={https://arxiv.org/abs/2002.09565},
   abstract={Algorithmic trading systems are often completely automated, and deep learning is increasingly receiving attention in this domain. Nonetheless, little is known about the robustness properties of these models. We study valuation models for algorithmic trading from the perspective of adversarial machine learning. We introduce new attacks specific to this domain with size constraints that minimize attack costs. We further discuss how these attacks can be used as an analysis tool to study and evaluate the robustness properties of financial models. Finally, we investigate the feasibility of realistic adversarial attacks in which an adversarial trader fools automated trading systems into making inaccurate predictions.}
@@ -352,7 +352,7 @@
 @article{sandoval2022autoregressive,
   title={Autoregressive Perturbations for Data Poisoning},
   author={Sandoval-Segura, Pedro and Singla, Vasu and Geiping, Jonas and Goldblum, Micah and Goldstein, Tom and Jacobs, David W},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2022},
   html={https://arxiv.org/abs/2206.03693},
   abstract={The prevalence of data scraping from social media as a means to obtain datasets has led to growing concerns regarding unauthorized use of data. Data poisoning attacks have been proposed as a bulwark against scraping, as they make data "unlearnable" by adding small, imperceptible perturbations. Unfortunately, existing methods require knowledge of both the target architecture and the complete dataset so that a surrogate network can be trained, the parameters of which are used to generate the attack. In this work, we introduce autoregressive (AR) poisoning, a method that can generate poisoned data without access to the broader dataset. The proposed AR perturbations are generic, can be applied across different datasets, and can poison different architectures. Compared to existing unlearnable methods, our AR poisons are more resistant against common defenses such as adversarial training and strong data augmentations. Our analysis further provides insight into what makes an effective data poison.}
@@ -361,7 +361,7 @@
 @article{shwartz2022pre,
   title={Pre-Train Your Loss: Easy Bayesian Transfer Learning with Informative Priors},
   author={Shwartz-Ziv, Ravid and Goldblum, Micah and Souri, Hossein and Kapoor, Sanyam and Zhu, Chen and LeCun, Yann and Wilson, Andrew Gordon},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2022},
   html={https://arxiv.org/abs/2205.10279},
   abstract={Deep learning is increasingly moving towards a transfer learning paradigm whereby large foundation models are fine-tuned on downstream tasks, starting from an initialization learned on the source task. But an initialization contains relatively little information about the source task. Instead, we show that we can learn highly informative posteriors from the source task, through supervised or self-supervised approaches, which then serve as the basis for priors that modify the whole loss surface on the downstream task. This simple modular approach enables significant performance gains and more data-efficient learning on a variety of downstream classification and segmentation tasks, serving as a drop-in replacement for standard pre-training strategies. These highly informative priors also can be saved for future use, similar to pre-trained weights, and stand in contrast to the zero-mean isotropic uninformative priors that are typically used in Bayesian deep learning.}
@@ -370,7 +370,7 @@
 @article{bansal2022end,
   title={End-to-end Algorithm Synthesis with Recurrent Networks: Logical Extrapolation Without Overthinking},
   author={Bansal, Arpit and Schwarzschild, Avi and Borgnia, Eitan and Emam, Zeyad and Huang, Furong and Goldblum, Micah and Goldstein, Tom},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2022},
   html={https://arxiv.org/abs/2202.05826},
   abstract={Machine learning systems perform well on pattern matching tasks, but their ability to perform algorithmic or logical reasoning is not well understood. One important reasoning capability is algorithmic extrapolation, in which models trained only on small/simple reasoning problems can synthesize complex strategies for large/complex problems at test time. Algorithmic extrapolation can be achieved through recurrent systems, which can be iterated many times to solve difficult reasoning problems. We observe that this approach fails to scale to highly complex problems because behavior degenerates when many iterations are applied -- an issue we refer to as "overthinking." We propose a recall architecture that keeps an explicit copy of the problem instance in memory so that it cannot be forgotten. We also employ a progressive training routine that prevents the model from learning behaviors that are specific to iteration number and instead pushes it to learn behaviors that can be repeated indefinitely. These innovations prevent the overthinking problem, and enable recurrent systems to solve extremely hard extrapolation tasks.}
@@ -379,7 +379,7 @@
 @article{souri2022sleeper,
   title={Sleeper agent: Scalable hidden trigger backdoors for neural networks trained from scratch},
   author={Souri, Hossein and Goldblum, Micah and Fowl, Liam and Chellappa, Rama and Goldstein, Tom},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2022},
   html={https://arxiv.org/abs/2106.08970},
   abstract={As the curation of data for machine learning becomes increasingly automated, dataset tampering is a mounting threat. Backdoor attackers tamper with training data to embed a vulnerability in models that are trained on that data. This vulnerability is then activated at inference time by placing a "trigger" into the model's input. Typical backdoor attacks insert the trigger directly into the training data, although the presence of such an attack may be visible upon inspection. In contrast, the Hidden Trigger Backdoor Attack achieves poisoning without placing a trigger into the training data at all. However, this hidden trigger attack is ineffective at poisoning neural networks trained from scratch. We develop a new hidden trigger attack, Sleeper Agent, which employs gradient matching, data selection, and target model re-training during the crafting process. Sleeper Agent is the first hidden trigger backdoor attack to be effective against neural networks trained from scratch. We demonstrate its effectiveness on ImageNet and in black-box settings.}
@@ -388,7 +388,7 @@
 @article{levin2022models,
   title={Where do Models go Wrong? Parameter-Space Saliency Maps for Explainability},
   author={Levin, Roman and Shu, Manli and Borgnia, Eitan and Huang, Furong and Goldblum, Micah and Goldstein, Tom},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2022},
   html={https://arxiv.org/abs/2108.01335},
   abstract={Conventional saliency maps highlight input features to which neural network predictions are highly sensitive. We take a different approach to saliency, in which we identify and analyze the network parameters, rather than inputs, which are responsible for erroneous decisions. We find that samples which cause similar parameters to malfunction are semantically similar. We also show that pruning the most salient parameters for a wrongly classified sample often improves model behavior. Furthermore, fine-tuning a small number of the most salient parameters on a single sample results in error correction on other samples that are misclassified for similar reasons. Based on our parameter saliency method, we also introduce an input-space saliency technique that reveals how image features cause specific network components to malfunction. Further, we rigorously validate the meaningfulness of our saliency maps on both the dataset and case-study levels.}
@@ -398,7 +398,7 @@
   title={Chroma-VAE: Mitigating Shortcut Learning with Generative Classifiers},
   author={Yang, Wanqian and Kirichenko, Polina and Goldblum, Micah and Wilson, Andrew Gordon},
   year={2022},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   html={https://openreview.net/forum?id=WWVcsfI0jGH},
   abstract={Deep neural networks are susceptible to shortcut learning, using simple features to achieve low training loss without discovering essential semantic structure. Contrary to prior belief, we show that generative models alone are not sufficient to prevent shortcut learning, despite an incentive to recover a more comprehensive representation of the data than discriminative approaches. However, we observe that shortcuts are preferentially encoded with minimal information, a fact that generative models can exploit to mitigate shortcut learning. In particular, we propose Chroma-VAE, a two-pronged approach where a VAE classifier is initially trained to isolate the shortcut in a small latent subspace, allowing a secondary classifier to be trained on the complementary, shortcut-free latent subspace. In addition to demonstrating the efficacy of Chroma-VAE on benchmark and real-world shortcut learning tasks, our work highlights the potential for manipulating the latent space of generative classifiers to isolate or interpret specific correlations.}
 }
@@ -407,7 +407,7 @@
 @article{lotfi2022pac,
   title={PAC-Bayes Compression Bounds So Tight That They Can Explain Generalization},
   author={Lotfi, Sanae and Finzi, Marc Anton and Kapoor, Sanyam and Potapczynski, Andres and Goldblum, Micah and Wilson, Andrew Gordon},
-  journal={Advances in Neural Information Processing Systems (NeurIPS),},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2022},
   html={https://openreview.net/forum?id=o8nYuR8ekFm},
   abstract={While there has been progress in developing non-vacuous generalization bounds for deep neural networks, these bounds tend to be uninformative about why deep learning works. In this paper, we develop a compression approach based on quantizing neural network parameters in a linear subspace, profoundly improving on previous results to provide state-of-the-art generalization bounds on a variety of tasks, including transfer learning. We use these tight bounds to better understand the role of model size, equivariance, and the implicit biases of optimization, for generalization in deep learning. Notably, we find large models can be compressed to a much greater extent than previously known, encapsulating Occam’s razor.}
@@ -423,7 +423,7 @@
 @article{levin2023transfer,
   title={Transfer Learning with Deep Tabular Models},
   author={Levin, Roman and Cherepanova, Valeriia and Schwarzschild, Avi and Bansal, Arpit and Bruss, Bayan and Goldstein, Tom and Wilson, Andrew Gordon and Goldblum, Micah},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2023},
   html={https://openreview.net/forum?id=b0RuGUYo8pA},
   abstract={Recent work on deep learning for tabular data demonstrates the strong performance of deep tabular models, often bridging the gap between gradient boosted decision trees and neural networks. Accuracy aside, a major advantage of neural models is that they are easily fine-tuned in new domains and learn reusable features. This property is often exploited in computer vision and natural language applications, where transfer learning is indispensable when task-specific training data is scarce. In this work, we explore the benefits that representation learning provides for knowledge transfer in the tabular domain. We conduct experiments in a realistic medical diagnosis test bed with limited amounts of downstream data and find that transfer learning with deep tabular models provides a definitive advantage over gradient boosted decision tree methods. We further compare the supervised and self-supervised pretraining strategies and provide practical advice on transfer learning with tabular models. Finally, we propose a pseudo-feature method for cases where the upstream and downstream feature sets differ, a tabular-specific problem widespread in real-world applications.}
@@ -432,7 +432,7 @@
 @article{chiang2023gradient,
   title={Gradient-Based Optimization Is Not Necessary for Generalization in Neural Networks},
   author={Chiang, Ping-yeh and Ni, Renkun and Miller, David Yu and Bansal, Arpit and Geiping, Jonas and Goldblum, Micah and Goldstein, Tom},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2023},
   html={https://openreview.net/forum?id=QC10RmRbZy9},
   abstract={It is commonly believed that the implicit regularization of optimizers is needed for neural networks to generalize in the overparameterized regime. In this paper, we observe experimentally that this implicit regularization behavior is {\em generic}, i.e. it does not depend strongly on the choice of optimizer. We demonstrate this by training neural networks using several gradient-free optimizers that do not benefit from properties that are often attributed to gradient-based optimizers.   This includes a guess-and-check optimizer that generates uniformly random parameter vectors until one is found that happens to achieve perfect train accuracy, and a zeroth-order pattern search optimizer that uses no gradient computations. In the low sample and few-shot regimes, where zeroth order optimizers are most tractable, we find that these non-gradient optimizers achieve test accuracy comparable to SGD.}
@@ -441,7 +441,7 @@
 @article{xu2023exploring,
   title={Exploring and Exploiting Decision Boundary Dynamics for Adversarial Robustness},
   author={Xu, Yuancheng and Sun, Yanchao and Goldblum, Micah and Goldstein, Tom and Huang, Furong},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2023},
   html={https://openreview.net/forum?id=aRTKuscKByJ},
   abstract={The robustness of a deep classifier can be characterized by its margins: the decision boundary's distances to natural data points. However, it is unclear whether existing robust training methods effectively increase the margin for each vulnerable point during training. To understand this, we propose a continuous-time framework for quantifying the relative speed of the decision boundary with respect to each individual point. Through visualizing the moving speed of the decision boundary under Adversarial Training, one of the most effective robust training algorithms, a surprising moving-behavior is revealed: the decision boundary moves away from some vulnerable points but simultaneously moves closer to others, decreasing their margins. To alleviate these conflicting dynamics of the decision boundary, we propose Dynamics-aware Robust Training (DyART), which encourages the decision boundary to engage in movement that prioritizes increasing smaller margins. In contrast to prior works, DyART directly operates on the margins rather than their indirect approximations, allowing for more targeted and effective robustness improvement. Experiments on the CIFAR-10 and Tiny-ImageNet datasets verify that DyART alleviates the conflicting dynamics of the decision boundary and obtains improved robustness under various perturbation sizes compared to the state-of-the-art defenses. Our code is available at https://github.com/Yuancheng-Xu/Dynamics-Aware-Robust-Training.}
@@ -450,7 +450,7 @@
 @article{wen2023canary,
   title={Canary in a Coalmine: Better Membership Inference with Ensembled Adversarial Queries},
   author={Wen, Yuxin and Bansal, Arpit and Kazemi, Hamid and Borgnia, Eitan and Goldblum, Micah and Geiping, Jonas and Goldstein, Tom},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2023},
   html={https://openreview.net/forum?id=b7SBTEBFnC},
   abstract={As industrial applications are increasingly automated by machine learning models, enforcing personal data ownership and intellectual property rights requires tracing training data back to their rightful owners. Membership inference algorithms approach this problem by using statistical techniques to discern whether a target sample was included in a model's training set. However, existing methods only utilize the unaltered target sample or simple augmentations of the target to compute statistics. Such a sparse sampling of the model's behavior carries little information, leading to poor inference capabilities. In this work, we use adversarial tools to directly optimize for queries that are discriminative and diverse. Our improvements achieve significantly more accurate membership inference than existing methods, especially in offline scenarios and in the low false-positive regime which is critical in legal settings.}
@@ -459,7 +459,7 @@
 @article{gruver2023lie,
   title={The Lie Derivative for Measuring Learned Equivariance},
   author={Gruver, Nate and Finzi, Marc Anton and Goldblum, Micah and Wilson, Andrew Gordon},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2023},
   html={https://openreview.net/forum?id=JL7Va5Vy15J},
   abstract={Equivariance guarantees that a model's predictions capture key symmetries in data. When an image is translated or rotated, an equivariant model's representation of that image will translate or rotate accordingly. The success of convolutional neural networks has historically been tied to their ability to directly encode translation equivariance in their architecture. The rising success of vision transformers, which have no explicit architectural bias towards equivariance, challenges this narrative and suggests that augmentations and training data might also play a significant role in their performance. In order to better understand the role of equivariance in recent vision models, we introduce the Lie derivative, a method for measuring equivariance with strong mathematical foundations and minimal hyperparameters. Using the Lie derivative, we study the equivariance properties of hundreds of pretrained models, spanning CNNs, transformers, and Mixer architectures. The scale of our analysis allows us to separate the impact of architecture from other factors like model size or training method. Surprisingly, we find that many violations of equivariance can be linked to spatial aliasing in ubiquitous network layers, such as pointwise non-linearities, and that as models get larger and more accurate they tend to display more equivariance, regardless of architecture.}
@@ -468,7 +468,7 @@
 @article{chu2023panning,
   title={Panning for Gold in Federated Learning: Targeted Text Extraction under Arbitrarily Large-Scale Aggregation},
   author={Chu, Hong-Min and Geiping, Jonas and Fowl, Liam H and Goldblum, Micah and Goldstein, Tom},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2023},
   html={https://openreview.net/forum?id=A9WQaxYsfx},
   abstract={As federated learning (FL) matures, privacy attacks against FL systems in turn become more numerous and complex. Attacks on language models have progressed from recovering single sentences in simple classification tasks to recovering larger parts of user data. Current attacks against federated language models are sequence-agnostic and aim to extract as much data as possible from an FL update - often at the expense of fidelity for any particular sequence. Because of this, current attacks fail to extract any meaningful data under large-scale aggregation. In realistic settings, an attacker cares most about a small portion of user data that contains sensitive personal information, for example sequences containing the phrase "my credit card number is ...". In this work, we propose the first attack on FL that achieves targeted extraction of sequences that contain privacy-critical phrases, whereby we employ maliciously modified parameters to allow the transformer itself to filter relevant sequences from aggregated user data and encode them in the gradient update. Our attack can effectively extract sequences of interest even against extremely large-scale aggregation.}
@@ -477,7 +477,7 @@
 @article{geiping2023much,
   title={How Much Data Are Augmentations Worth? An Investigation into Scaling Laws, Invariance, and Implicit Regularization},
   author={Geiping, Jonas and Goldblum, Micah and Somepalli, Gowthami and Shwartz-Ziv, Ravid and Goldstein, Tom and Wilson, Andrew Gordon},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2023},
   html={https://openreview.net/forum?id=3aQs3MCSexD},
   abstract={Despite the clear performance benefits of data augmentations, little is known about why they are so effective. In this paper, we disentangle several key mechanisms through which data augmentations operate. Establishing an exchange rate between augmented and additional real data, we find that in out-of-distribution testing scenarios, augmentations which yield samples that are diverse, but inconsistent with the data distribution can be even more valuable than additional training data. Moreover, we find that data augmentations which encourage invariances can be more valuable than invariance alone, especially on small and medium sized training sets. Following this observation, we show that augmentations induce additional stochasticity during training, effectively flattening the loss landscape.}
@@ -486,7 +486,7 @@
 @article{fowl2023decepticons,
   title={Decepticons: Corrupted Transformers Breach Privacy in Federated Learning for Language Models},
   author={Fowl, Liam H and Geiping, Jonas and Reich, Steven and Wen, Yuxin and Czaja, Wojciech and Goldblum. Micah and Goldstein, Tom},
-  journal={International Conference on Learning Representations (ICLR),},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2023},
   html={https://openreview.net/forum?id=r0BrY4BiEXO},
   abstract={A central tenet of Federated learning (FL), which trains models without centralizing user data, is privacy. However, previous work has shown that the gradient updates used in FL can leak user information.  While the most industrial uses of FL are for text applications (e.g. keystroke prediction), nearly all attacks on FL privacy have focused on simple image classifiers. We propose a novel attack that reveals private user text by deploying malicious parameter vectors, and which succeeds even with mini-batches, multiple users, and long sequences.  Unlike previous attacks on FL, the attack exploits characteristics of both the Transformer architecture and the token embedding, separately extracting tokens and positional embeddings to retrieve high-fidelity text. This work suggests that FL on text, which has historically been resistant to privacy attacks, is far more vulnerable than previously thought.}
@@ -495,7 +495,7 @@
 @article{somepalli2023diffusion,
   title={Diffusion Art or Digital Forgery? Investigating Data Replication in Diffusion Models},
   author={Somepalli, Gowthami and Singla, Vasu and Goldblum, Micah and Geiping, Jonas and Goldstein, Tom},
-  journal={Computer Vision and Pattern Recognition Conference (CVPR),},
+  journal={Computer Vision and Pattern Recognition Conference (CVPR)},
   year={2023},
   html={https://arxiv.org/abs/2212.03860},
   abstract={Cutting-edge diffusion models produce images with high quality and customizability, enabling them to be used for commercial art and graphic design purposes. But do diffusion models create unique works of art, or are they replicating content directly from their training sets? In this work, we study image retrieval frameworks that enable us to compare generated images with training samples and detect when content has been replicated. Applying our frameworks to diffusion models trained on multiple datasets including Oxford flowers, Celeb-A, ImageNet, and LAION, we discuss how factors such as training set size impact rates of content replication. We also identify cases where diffusion models, including the popular Stable Diffusion model, blatantly copy from their training data.}
