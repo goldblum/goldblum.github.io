@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 
 🚨 **Note**: I am recruiting PhD students, primarily for programs in electrical engineering and computer science.  Reach out if you're interested. 🚨
 
-I am an assistant professor at Columbia University. My research focuses on both applied and fundamental problems in machine learning:  
+I am an assistant professor at Columbia University in Electrical Engineering and affiliated with Computer Science. My research focuses on both applied and fundamental problems in machine learning:  
 
 1.  **AI safety** - Modern AI systems contain biases, security vulnerabilities, expose users to privacy breaches, and exhibit catastrophic failures of reasoning and generalization.  My work aims to detect and close these gaps.  
 
