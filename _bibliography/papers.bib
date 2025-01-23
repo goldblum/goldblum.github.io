@@ -1,6 +1,37 @@
 ---
 ---
 
+@article{white2024livebench,
+  title={Livebench: A challenging, contamination-free llm benchmark},
+  author={White, Colin and Dooley, Samuel and Roberts, Manley and Pal, Arka and Feuer, Ben and Jain, Siddhartha and Shwartz-Ziv, Ravid and Jain, Neel and Saifullah, Khalid and Naidu, Siddartha and Hegde, Chinmay and LeCun, Yann and Goldstein, Tom and Neiswanger, Willie and Goldblum, Micah},
+  journal={International Conference on Learning Representations (ICLR)},
+  year={2025},
+  selected = {true},
+  html={https://arxiv.org/abs/2406.19314},
+  abstract={Test set contamination, wherein test data from a benchmark ends up in a newer model's training set, is a well-documented obstacle for fair LLM evaluation and can quickly render benchmarks obsolete. To mitigate this, many recent benchmarks crowdsource new prompts and evaluations from human or LLM judges; however, these can introduce significant biases, and break down when scoring hard questions. In this work, we introduce a new benchmark for LLMs designed to be immune to both test set contamination and the pitfalls of LLM judging and human crowdsourcing. We release LiveBench, the first benchmark that (1) contains frequently-updated questions from recent information sources, (2) scores answers automatically according to objective ground-truth values, and (3) contains a wide variety of challenging tasks, spanning math, coding, reasoning, language, instruction following, and data analysis. To achieve this, LiveBench contains questions that are based on recently-released math competitions, arXiv papers, news articles, and datasets, and it contains harder, contamination-free versions of tasks from previous benchmarks such as Big-Bench Hard, AMPS, and IFEval. We evaluate many prominent closed-source models, as well as dozens of open-source models ranging from 0.5B to 110B in size. LiveBench is difficult, with top models achieving below 65% accuracy. We release all questions, code, and model answers. Questions will be added and updated on a monthly basis, and we will release new tasks and harder versions of tasks over time so that LiveBench can distinguish between the capabilities of LLMs as they improve in the future. We welcome community engagement and collaboration for expanding the benchmark tasks and models.},
+  preview={livebench.png}
+}
+
+@article{feuer2025style,
+  title={Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking},
+  author={Feuer, Benjamin and Goldblum, Micah and Datta, Teresa and Nambiar, Sanjana and Besaleli, Raz and Dooley, Samuel and Cembalest, Max and Dickerson, John P},
+  journal={International Conference on Learning Representations (ICLR)},
+  year={2025},
+  html={https://arxiv.org/abs/2409.15268},
+  abstract={The release of ChatGPT in November 2022 sparked an explosion of interest in post-training and an avalanche of new preference optimization (PO) methods. These methods claim superior alignment by virtue of better correspondence with human pairwise preferences, often measured by LLM-judges. In this work, we attempt to answer the following question -- do LLM-judge preferences translate to progress on other, more concrete metrics for alignment, and if not, why not? We define a concrete metric for alignment, and introduce SOS-Bench (Substance Outweighs Style Benchmark), which is to the best of our knowledge the largest standardized, reproducible LLM meta-benchmark to date. We find that (1) LLM-judge preferences do not correlate with concrete measures of safety, world knowledge, and instruction following; (2) LLM-judges have powerful implicit biases, prioritizing style over factuality and safety; and (3) the supervised fine-tuning (SFT) stage of post-training, and not the PO stage, has the greatest impact on alignment, with data scaling and prompt diversity as the driving factors.},
+  preview={styleoutweighs.jpg}
+}
+
+@article{chen2025adaptive,
+  title={Adaptive Rentention \& Correction for Continual Learning},
+  author={Chen, Haoran and Goldblum, Micah and Wu, Zuxuan and Jiang, Yu-Gang},
+  journal={International Conference on Learning Representations (ICLR)},
+  year={2025},
+  html={https://arxiv.org/abs/2405.14318},
+  abstract={Continual learning, also known as lifelong learning or incremental learning, refers to the process by which a model learns from a stream of incoming data over time. A common problem in continual learning is the classification layer's bias towards the most recent task. Traditionally, methods have relied on incorporating data from past tasks during training to mitigate this issue. However, the recent shift in continual learning to memory-free environments has rendered these approaches infeasible. In this study, we propose a solution focused on the testing phase. We first introduce a simple Out-of-Task Detection method, OTD, designed to accurately identify samples from past tasks during testing. Leveraging OTD, we then propose: (1) an Adaptive Retention mechanism for dynamically tuning the classifier layer on past task data; (2) an Adaptive Correction mechanism for revising predictions when the model classifies data from previous tasks into classes from the current task. We name our approach Adaptive Retention & Correction (ARC). While designed for memory-free environments, ARC also proves effective in memory-based settings. Extensive experiments show that our proposed method can be plugged in to virtually any existing continual learning approach without requiring any modifications to its training procedure. Specifically, when integrated with state-of-the-art approaches, ARC achieves an average performance increase of 2.7\% and 2.6\% on the CIFAR-100 and Imagenet-R datasets, respectively.},
+  preview={chencontinual.jpg}
+}
+
 @article{goldblum2024no,
   title={The No Free Lunch Theorem, Kolmogorov Complexity, and the Role of Inductive Biases in Machine Learning},
   author={Goldblum, Micah and Finzi, Marc and Rowan, Keefer and Wilson, Andrew Gordon},
