@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-[]: # (🚨 **Note**: I am recruiting PhD students, primarily for programs in computer science and electrical engineering.  Reach out if you're interested. 🚨)
+[🚨 **Note**: I am recruiting PhD students, primarily for programs in computer science and electrical engineering.  Reach out if you're interested. 🚨]: #
 
 I am an assistant professor at Columbia University. My research focuses on both applied and fundamental problems in machine learning including AI safety, automated data science, training and inference strategies for large-scale models, and building a mathematical and also scientific understanding of why complex AI systems work.
 
