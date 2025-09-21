@@ -12,6 +12,53 @@
   preview={livebench.png}
 }
 
+
+@article{marek2025small,
+  title={Small Batch Size Training for Language Models: When Vanilla SGD Works, and Why Gradient Accumulation is Wasteful},
+  author={Marek, Martin and Lotfi, Sanae and Somasundaram, Aditya and Wilson, Andrew Gordon and Goldblum, Micah},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2025},
+  selected = {true},
+  html={https://arxiv.org/abs/2507.07101},
+  abstract={Conventional wisdom dictates that small batch sizes make language model pretraining and fine-tuning unstable, motivating gradient accumulation, which trades off the number of optimizer steps for a proportional increase in batch size. While it is common to decrease the learning rate for smaller batch sizes, other hyperparameters are often held fixed. In this work, we revisit small batch sizes all the way down to batch size one, and we propose a rule for scaling Adam hyperparameters to small batch sizes. In particular, rather than holding the decay rate of the second moment fixed across batch sizes, we propose to hold its half-life fixed in terms of tokens. We find that small batch sizes (1) train stably, (2) are consistently more robust to hyperparameter choices, (3) achieve equal or better per-FLOP performance than larger batch sizes, and (4) notably enable stable language model training with vanilla SGD, even without momentum, despite storing no optimizer state. Building on these results, we provide practical recommendations for selecting a batch size and setting optimizer hyperparameters. We further recommend against gradient accumulation unless training on multiple devices with multiple model replicas. Finally, we show that a small batch size combined with an optimizer with a small state size can provide the performance benefits of full fine-tuning while maintaining a similar memory footprint to LoRA.},
+  preview={small_batch.png}
+}
+
+
+@article{mcleish2025gemstones,
+  title={Gemstones: A Model Suite for Scaling Laws},
+  author={McLeish, Sean and Kirchenbauer, John and Miller, David Yu and Singh, Siddharth and Bhatele, Abhinav and Goldblum, Micah and Panda, Ashwinee and Goldstein, Tom},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2025},
+  selected = {false},
+  html={https://arxiv.org/abs/2502.06857},
+  abstract={Scaling laws are typically fit using a family of models with a narrow range of frozen hyper-parameter choices. In this work we study scaling laws using multiple architectural shapes and hyperparameter choices, highlighting their impact on resulting prescriptions. As a primary artifact of our research, we release the Gemstones: an open-source scaling law dataset, consisting of over 4000 checkpoints from transformers with up to 2 billion parameters and diverse architectural shapes; including ablations over learning rate and cooldown. Our checkpoints enable more complex studies of scaling, such as analyzing the relationship between width and depth. By examining our model suite, we find that the prescriptions of scaling laws can be highly sensitive to the experimental design process and the specific model checkpoints used during fitting.},
+  preview={gemstone.png}
+}
+
+@article{he2025brain,
+  title={Brain-Predictive Reasoning Embedding through Residual Disentanglement},
+  author={He, Linyang and Zhong, Tianjun and Antonello, Richard and Mischler, Gavin and Goldblum, Micah and Mesgarani, Nima},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2025},
+  selected = {false},
+  html={https://goldblum.github.io/},
+  abstract={Conventional brain encoding analysis using language models that feeds whole hidden states can be biased toward shallow lexical cues. Here we present a residual-layer disentangling method that extracts four nearly orthogonal vectors from a language model, respectively containing information corresponding to lexicon, syntax, meaning, and reasoning. We first probe the model to locate the layers where each linguistic feature is maximal, then strip lower-level feature incrementally. Applying bootstrap-ridge encoding to natural-speech ECoG yields three insights: 1) Our residual pipeline isolates a reasoning embedding with unique predictive value, possible only because the latest large language models exhibit emergent reasoning behavior. 2) Apparent high-level predictive performance in conventional analyses is largely attributable to recycled shallow information, rather than genuine deep processing. 3) The reasoning embedding reveals distinct spatiotemporal brain activation patterns, including recruitment of frontal and visual regions beyond classical language areas, suggesting a potential neural substrate for high-level reasoning. Together, our approach removes shallow bias, aligns distinct transformer strata with brain hierarchies, and provides the first brain-relevant representation of reasoning.},
+  preview={brain.jpg}
+}
+
+@article{hayes2025finegrain,
+  title={FineGRAIN: Evaluating Failure Modes of Text-to-Image Models with Vision Language Model Judges},
+  author={Hayes, Kevin David and Goldblum, Micah and Sehwag, Vikash and Somepalli, Gowthami and Panda, Ashwinee and Goldstein, Tom},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2025},
+  selected = {false},
+  html={https://goldblum.github.io/},
+  abstract={Text-to-image (T2I) models are capable of generating visually impressive images, yet they often fail to accurately capture specific attributes in user prompts, such as the correct number of objects with the specified colors. The diversity of such errors underscores the need for a hierarchical evaluation framework that can compare prompt adherence abilities of different image generation models. Simultaneously, benchmarks of vision language models (VLMs) have not kept pace with the complexity of scenes that VLMs are used to annotate. In this work, we propose a structured methodology for jointly evaluating T2I models and VLMs by testing whether VLMs can identify 27 specific failure modes in the images generated by T2I models conditioned on challenging prompts. Our second contribution is a dataset of prompts and images generated by 5 T2I models (Flux, SD3-Medium, SD3-Large, SD3.5- Medium, SD3.5-Large) and the corresponding annotations from a VLM (Molmo) annotated by an LLM (Llama3) to test whether the VLM can correctly identify the failure mode in a generated image. By analyzing failure modes on a curated set of prompts, we reveal systematic errors in attribute fidelity and object representation. Our findings suggest that current metrics are insufficient to capture these nuanced errors, highlighting the importance of targeted benchmarks for advancing generative model reliability and interpretability.},
+  preview={finegrain.png}
+}
+
+
 @article{feuer2025style,
   title={Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking},
   author={Feuer, Benjamin and Goldblum, Micah and Datta, Teresa and Nambiar, Sanjana and Besaleli, Raz and Dooley, Samuel and Cembalest, Max and Dickerson, John P},
@@ -115,7 +162,7 @@
   author={Potapczynski, Andres and Qiu, Shikai and Finzi, Marc Anton and Ferri, Christopher and Chen, Zixi and Goldblum, Micah and Bruss, Bayan C and Sa, Christopher De and Wilson, Andrew Gordon},
   journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2024},
-  html={https://goldblum.github.io/},
+  html={https://arxiv.org/abs/2410.02117},
   abstract={Dense linear layers are the dominant computational bottleneck in large neural networks, presenting a critical need for more efficient alternatives. Previous efforts to develop alternatives have focused on a small number of hand-crafted structured matrices, and have neglected to investigate whether these structures can surpass dense layers in terms of compute-optimal scaling laws when both the model size and training examples are optimally allocated. In this work, we present a unifying framework that enables searching among all linear operators expressible via an Einstein summation. This framework encompasses many previously proposed structures, such as low-rank, Kronecker, Tensor-Train, and Monarch, along with many novel structures. We develop a taxonomy of all such operators based on their computational and algebraic properties, which provides insights into their scaling laws. Combining these insights with empirical evaluation, we identify a subset of structures that achieve equal or better performance than dense layers as a function of training compute. To further improve their compute efficiency, we develop a natural extension of these performant structures that convert them into a sparse Mixture-of-Experts layer. The resulting layer significantly outperforms dense layers in compute-optimal training efficiency for GPT-2 language models.},
   preview={einsum.png}
 }
@@ -675,7 +722,7 @@
 
 @article{fowl2023decepticons,
   title={Decepticons: Corrupted Transformers Breach Privacy in Federated Learning for Language Models},
-  author={Fowl, Liam H and Geiping, Jonas and Reich, Steven and Wen, Yuxin and Czaja, Wojciech and Goldblum. Micah and Goldstein, Tom},
+  author={Fowl, Liam H and Geiping, Jonas and Reich, Steven and Wen, Yuxin and Czaja, Wojciech and Goldblum, Micah and Goldstein, Tom},
   journal={International Conference on Learning Representations (ICLR)},
   year={2023},
   html={https://openreview.net/forum?id=r0BrY4BiEXO},
