@@ -1,5 +1,28 @@
 ---
 ---
+@article{li2025zebra,
+  title={Zebra-cot: A dataset for interleaved vision language reasoning},
+  author={Li, Ang and Wang, Charles and Fu, Deqing and Yue, Kaiyu and Cai, Zikui and Zhu, Wang Bill and Liu, Ollie and Guo, Peng and Neiswanger, Willie and Huang, Furong and Goldstein, Tom and Goldblum, Micah},
+  journal={International Conference on Learning Representations (ICLR)},
+  year={2026},
+  selected = {true},
+  html={https://openreview.net/forum?id=c6XIVI3TiQ},
+  abstract={Humans often rely on visual aids, such as diagrams or sketches, when tackling complex problems. Teaching multimodal models to adopt similar strategies, a process known as Visual Chain of Thought (visual CoT), is much more difficult. The main challenges are: (1) weak performance of off-the-shelf visual CoT, which hinders reinforcement learning, and (2) the lack of high-quality visual CoT training data. We introduce Zebra-CoT a diverse large-scale interleaved text-image reasoning dataset with 182,384 reasoning traces across 18 domains with over 50 distinct tasks. This dataset is specifically designed to train models to natively perform visual CoT. We emphasize four categories of tasks where sketching or visual reasoning is especially natural, spanning (a) scientific questions such as geometry, physics, and algorithms; (b) 2D visual reasoning tasks like visual search and jigsaw puzzles; (c) 3D reasoning tasks including 3D multi-hop inference, embodied and robot planning; and (d) visual logic problems and strategic games like chess. Fine-tuning Anole‑7B model on Zebra-CoT yields a +12% improvement in our test‑set accuracy and up to +13% performance gains on standard VLM benchmarks. Similarly, fine-tuning Bagel‑7B produces models capable of generating high-quality interleaved visual reasoning chains, underscoring Zebra-CoT's effectiveness in advancing multimodal reasoning.},
+  preview={zebra.jpg}
+}
+
+
+@article{sandoval2025using,
+  title={Identifying and Evaluating Inactive Heads in Pretrained LLMs},
+  author={Sandoval-Segura, Pedro and Wang, Xijun and Panda, Ashwinee and Goldblum, Micah and Basri, Ronen and Goldstein, Tom and Jacobs, David},
+  journal={International Conference on Learning Representations (ICLR)},
+  year={2026},
+  selected = {false},
+  html={https://openreview.net/forum?id=dfYMjaiMG4},
+  abstract={Attention is foundational to large language models (LLMs), enabling different heads to have diverse focus on relevant input tokens. However, learned behaviors like attention sinks, where the first token receives the most attention despite limited semantic importance, suggest some heads may be inactive, and point to a significant source of computational redundancy. To analyze this phenomenon, we propose a taxonomy of 12 score functions that measure different ways a head can be inactive. Thresholding these scores allows us to analyze different sets of potentially inactive attention heads. We evaluate whether identified heads are inactive through model interventions, finding that more than 12% of attention heads are inactive on average, and can be ablated in specific contexts while maintaining MMLU accuracy to within 1% of the pretrained LLM. Across 3 model families, our score functions that measure the average norm of a head's output consistently identify inactive heads that would not have been found by score functions that rely solely on attention weights. We establish that relying on a score function that measures a first token attention sink would underestimate the prevalence of inactive heads, failing to identify more than 7% of inactive heads on average. We also show how measuring score distributions can provide insights into attention behavior. For instance, we find evidence that finetuning causes little to no change in attention behavior, and that even within the same model family, large model scales present markedly different attention behaviors.},
+  preview={heads.jpg}
+}
+
 
 @article{white2024livebench,
   title={Livebench: A challenging, contamination-free llm benchmark},
