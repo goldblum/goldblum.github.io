@@ -1,5 +1,66 @@
 ---
 ---
+
+@article{mcleish2026teaching,
+  title={Teaching Pretrained Language Models to Think Deeper with Retrofitted Recurrence},
+  author={McLeish, Sean and Li, Ang and Kirchenbauer, John and Kalra, Dayal Singh and Bartoldson, Brian R and Kailkhura, Bhavya and Schwarzschild, Avi and Geiping, Jonas and Goldstein, Tom and Goldblum, Micah},
+  journal={Conference on Language Modeling (COLM)},
+  year={2026},
+  selected = {false},
+  html={https://arxiv.org/abs/2511.07384},
+  abstract={Recent advances in depth-recurrent language models show that recurrence can decouple train-time compute and parameter count from test-time compute. In this work, we study how to convert existing pretrained non-recurrent language models into depth-recurrent models. We find that using a curriculum of recurrences to increase the effective depth of the model over the course of training preserves performance while reducing total computational cost. In our experiments, on mathematics, we observe that converting pretrained models to recurrent ones results in better performance at a given compute budget than simply post-training the original non-recurrent language model.},
+  preview={zebra.jpg}
+}
+
+@article{he2026livemathematicianbench,
+  title={LiveMathematicianBench: A Live Benchmark for Mathematician-Level Reasoning with Proof Sketches},
+  author={He, Linyang and Yu, Qiyao and Dong, Hanze and Liao, Baohao and Xu, Xinxing and Goldblum, Micah and Bian, Jiang and Mesgarani, Nima},
+  journal={Conference on Language Modeling (COLM)},
+  year={2026},
+  selected = {false},
+  html={https://arxiv.org/abs/2604.01754},
+  abstract={Mathematical reasoning is a hallmark of human intelligence, and whether large language models (LLMs) can meaningfully perform it remains a central question in artificial intelligence and cognitive science. As LLMs are increasingly integrated into scientific workflows, rigorous evaluation of their mathematical capabilities becomes a practical necessity. Existing benchmarks are limited by synthetic settings and data contamination. We present LiveMathematicianBench, a dynamic multiple-choice benchmark for research-level mathematical reasoning built from recent arXiv papers published after model training cutoffs. By grounding evaluation in newly published theorems, it provides a realistic testbed beyond memorized patterns. The benchmark introduces a thirteen-category logical taxonomy of theorem types (e.g., implication, equivalence, existence, uniqueness), enabling fine-grained evaluation across reasoning forms. It employs a proof-sketch-guided distractor pipeline that uses high-level proof strategies to construct plausible but invalid answer choices reflecting misleading proof directions, increasing sensitivity to genuine understanding over surface-level matching. We also introduce a substitution-resistant mechanism to distinguish answer recognition from substantive reasoning.},
+  preview={zebra.jpg}
+}
+
+@article{acherjee2026beyond,
+  title={Beyond the Model Backbone: Structural Fixes for Data Science Agents},
+  author={Acherjee, Abhigyan and Chun, Au Kwok and Rao, Amrutha and Chen, Zaiqian and Meidani, Kazem and Bruss, Bayan and Goldblum, Micah},
+  journal={Conference on Language Modeling (COLM)},
+  year={2026},
+  selected = {false},
+  html={https://goldblum.github.io/},
+  abstract={A slew of recent works develop agents for solving data science tasks end-to-end. Such agents have inspired large industry investment, motivated by their potential to automate time-consuming human labor and customize machine learning solutions for specialized applications. In this paper, we identify common failure modes of these agents when applied to tabular datasets: buggy code generation, absent hyperparameter tuning, and insufficient exploration. These failure modes are unified by a common underlying cause: inefficient use of the agent's compute budget.  We explore targeted interventions for each failure mode and find that a debug consultant that shares discovered runtime constraints across all branches of the search tree, prompt- and control-level enhancements, and refined tree search algorithms successfully recover wasted compute. Our results show that large gains in data science agent performance are achievable through agentic design alone, holding the underlying language model fixed.},
+  preview={zebra.jpg}
+}
+
+
+@article{hayes2026pinocchio,
+  title={Pinocchio: Estimating the Uncertainty of Black-Box Language Models},
+  author={Hayes, Kevin David and Pal, Arka and Zhang, Haosong and Goldstein, Tom and Goldblum, Micah},
+  journal={Conference on Language Modeling (COLM)},
+  year={2026},
+  selected = {false},
+  html={https://goldblum.github.io/},
+  abstract={In high-stakes decision-making applications of large language models (LLMs), practitioners require not only accurate LLMs but also uncertainty estimates for their predictions. Existing approaches to uncertainty estimation for LLMs require access to log-probabilities output by the model or require fine-tuning access. However, the vast majority of industrial LLM products use closed-source API models, and many such API models like GPT-5 do not return log-probabilities and may not allow fine-tuning. We introduce Pinocchio, a suite of 8B checkpoints for assigning uncertainty estimates to predictions made by popular API models. To this end, we curate a large collection of hard datasets, ranging from long-context to vision-language, that expose conditions under which frontier models output incorrect responses. We then train Pinocchio to recognize the patterns in prompts and model responses that indicate confidence or uncertainty. Pinocchio checkpoints significantly outperform existing baselines for black-box uncertainty estimation in calibration metrics and transfer to unseen model families, including Meta, Anthropic, and Google, whose responses they were not trained on. We release code for adding uncertainty estimation to existing repos in only two additional lines of code.},
+  preview={zebra.jpg}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @article{li2025zebra,
   title={Zebra-cot: A dataset for interleaved vision language reasoning},
   author={Li, Ang and Wang, Charles and Fu, Deqing and Yue, Kaiyu and Cai, Zikui and Zhu, Wang Bill and Liu, Ollie and Guo, Peng and Neiswanger, Willie and Huang, Furong and Goldstein, Tom and Goldblum, Micah},
@@ -30,7 +91,7 @@
   journal={Computer Vision and Pattern Recognition Conference (CVPR)},
   year={2026},
   selected = {false},
-  html={https://goldblum.github.io/},
+  html={https://arxiv.org/abs/2604.21915},
   abstract={We present Vista4D, a robust and flexible video reshooting framework that grounds the input video and target cameras in a 4D point cloud. Specifically, given an input video, our method re-synthesizes the scene with the same dynamics from a different camera trajectory and viewpoint. Existing video reshooting methods often struggle with depth estimation artifacts of real-world dynamic videos, while also failing to preserve content appearance and maintain precise camera control for challenging new trajectories. We build a 4D-grounded point cloud representation with static pixel segmentation and 4D reconstruction to explicitly preserve seen content and provide rich camera signals, and we train with reconstructed multiview dynamic data for robustness against point cloud artifacts during real-world inference. Our results demonstrate improved 4D consistency, camera control, and visual quality compared to state-of-the-art baselines under a variety of videos and camera paths. Moreover, our method generalizes to real-world applications such as dynamic scene expansion and 4D scene recomposition.},
   preview={vista.jpg}
 }
