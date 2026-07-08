@@ -73,10 +73,12 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      - name: Install and Build 🔧
+      - name: Install and Build
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade jupyter
+          rm -f assets/img/**/*-480.webp assets/img/**/*-800.webp assets/img/**/*-1400.webp
+          rm -rf _site .jekyll-cache .sass-cache
           export JEKYLL_ENV=production
           bundle exec jekyll build --lsi
       - name: Purge unused CSS 🧹
