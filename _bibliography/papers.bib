@@ -1,6 +1,40 @@
 ---
 ---
 
+
+@article{pal2026answering,
+  title={Answering At Any Cost: Frontier LLMs Are Consequence-Insensitive},
+  author={Pal, Arka and Chu, Au Kwok and Zahran, Louai and Thomas, Rahul Krishna and Hayes, Kevin David and Block, Adam and Goldblum, Micah},
+  journal={Advances in Neural Information Processing (NeurIPS)},
+  year={2026},
+  selected = {false},
+  html={https://goldblum.github.io/},
+  abstract={LLM-based systems are increasingly deployed in domains where incorrect outputs carry real costs, often necessitating expensive human review and verification. We argue that a central issue is not simply error, but consequence-insensitivity: models fail to adjust their behavior according to the cost of being wrong. We study this failure across both explicit utility framings as well as natural-language descriptions of stakes that mirror real-world deployment scenarios. Our evaluation spans agentic coding and mathematical reasoning, covering five frontier model families. Across settings, models systematically under-abstain: they continue to answer or submit patches even when incorrect answers carry significant consequences. The pathology is striking: models continue to submit answers in trivial settings where abstention is strictly dominant, and even when told an incorrect answer will cause nuclear extinction. Further, we find that this behavior is orthogonal to existing benchmarks; increasing model size or capability within a family does not improve sensitivity. Comparing base and instruction-tuned models localizes much of this anti-abstention bias to post-training: base models abstain far more often, though they are not themselves reliably consequence-aware. Finally, we evaluate prior post-hoc interventions alongside in-context learning and fine-tuning, finding that none robustly resolves the failure. Our results suggest that current post-training and evaluation pipelines optimize models to answer, not to act under stakes -- a significant bottleneck for trustworthy autonomy.},
+  preview={consequence.png}
+}
+
+@article{shen2026understanding,
+  title={Understanding Reasoning from Pretraining to Post-Training: Chess as a Controlled Testbed},
+  author={Shen, Jingyan and Li, Ang Li and Rahman, Salman and Sun, Yifan and Goldblum, Micah and Telgarsky, Matus and Izmailov, Pavel},
+  journal={Advances in Neural Information Processing (NeurIPS)},
+  year={2026},
+  selected = {false},
+  html={https://arxiv.org/abs/2607.16097},
+  abstract={Reinforcement learning (RL) has become central to improving large language models (LLMs) on complex reasoning tasks, yet RL post-training is largely studied in isolation from the pretraining that precedes it. As a result, two basic questions remain open: (1) how do pretraining choices (model size, data) shape the returns to RL compute, and (2) what does RL actually do to the model? These questions are difficult to study in the standard LLM setting: pretraining corpora are vast and uncontrolled, making it hard to attribute behaviors to pretraining versus RL, and systematic compute sweeps across both stages are prohibitively expensive. To address these challenges, we use chess as a controlled testbed for studying reasoning across the full pretraining-to-post-training pipeline. We follow the standard LLM training pipeline by pretraining language models from 5M to 1B parameters on human chess games, supervised fine-tuning on synthetic reasoning traces, and running RL on chess puzzles with verifiable rewards. Using this framework, we find that the post-RL performance at given RL compute level is well-predicted from the pretraining loss, and slope of the RL reward curves improves approximately linearly with the pretraining tokens. Beyond scaling, we find that RL does not simply sharpen the SFT policy: on easy puzzles it amplifies correct moves the SFT policy already preferred, while on hard puzzles it surfaces correct moves that were nearly absent under SFT. We further test whether our findings transfer beyond chess by training a 1B language model on math-domain text, where the same predictive pattern emerges: longer-pretrained checkpoints reach higher post-RL performance and improve faster under RL. In sum, we provide a quantitative account of the pretraining-to-RL interface and a controlled testbed for studying the science of reasoning across the full pretraining-to-post-training pipeline.},
+  preview={pretopost.jpeg}
+}
+
+@article{thomas2026dynamic,
+  title={Dynamic Delayed Tree Expansion For Improved Multi-Path Speculative Decoding},
+  author={Thomas, Rahul and Kitanovski, Teo and Goldblum, Micah and Pal, Arka},
+  journal={Advances in Neural Information Processing (NeurIPS)},
+  year={2026},
+  selected = {false},
+  html={https://arxiv.org/abs/2602.16994},
+  abstract={Multi-path speculative decoding accelerates lossless sampling from a target model by using a cheaper draft model to generate a draft tree of tokens, and then applies a verification algorithm that accepts a subset of these. While prior work has proposed various verification algorithms for i.i.d rollouts, their relative performance under matched settings remains unclear. In this work, we firstly present a systematic evaluation of verification strategies across model families, tasks, and sampling regimes, and find that Traversal Verification dominates consistently, with OT-based methods lagging far behind. Our analysis uncovers that this occurs because OT-based methods achieve high multi-token acceptance near the root of the draft tree, while multi-token gains are most impactful deeper in the draft tree, where draft and target distributions diverge. Based on this insight, we propose delayed tree expansion, which drafts a partial single path, delaying the i.i.d. branching point. We show that delayed tree expansion preserves the target distribution and improves on root-node i.i.d rollouts. Further, we develop a dynamic neural selector that estimates the expected block efficiency of optimal-transport-based verification methods from draft and target features, enabling context-dependent expansion decisions. Our neural selector allows OT-based methods like SpecInfer to outperform Traversal Verification for the first time, achieving 5% higher average throughput across a wide range of models, datasets, and sampling settings.},
+  preview={dynamic.png}
+}
+
 @article{mcleish2026teaching,
   title={Teaching Pretrained Language Models to Think Deeper with Retrofitted Recurrence},
   author={McLeish, Sean and Li, Ang and Kirchenbauer, John and Kalra, Dayal Singh and Bartoldson, Brian R and Kailkhura, Bhavya and Schwarzschild, Avi and Geiping, Jonas and Goldstein, Tom and Goldblum, Micah},
@@ -29,7 +63,7 @@
   journal={Conference on Language Modeling (COLM)},
   year={2026},
   selected = {false},
-  html={https://goldblum.github.io/},
+  html={https://arxiv.org/abs/2608.10424},
   abstract={A slew of recent works develop agents for solving data science tasks end-to-end. Such agents have inspired large industry investment, motivated by their potential to automate time-consuming human labor and customize machine learning solutions for specialized applications. In this paper, we identify common failure modes of these agents when applied to tabular datasets: buggy code generation, absent hyperparameter tuning, and insufficient exploration. These failure modes are unified by a common underlying cause: inefficient use of the agent's compute budget.  We explore targeted interventions for each failure mode and find that a debug consultant that shares discovered runtime constraints across all branches of the search tree, prompt- and control-level enhancements, and refined tree search algorithms successfully recover wasted compute. Our results show that large gains in data science agent performance are achievable through agentic design alone, holding the underlying language model fixed.},
   preview={datascience.png}
 }
@@ -41,8 +75,8 @@
   journal={Conference on Language Modeling (COLM)},
   year={2026},
   selected = {false},
-  html={https://goldblum.github.io/},
-  abstract={In high-stakes decision-making applications of large language models (LLMs), practitioners require not only accurate LLMs but also uncertainty estimates for their predictions. Existing approaches to uncertainty estimation for LLMs require access to log-probabilities output by the model or require fine-tuning access. However, the vast majority of industrial LLM products use closed-source API models, and many such API models like GPT-5 do not return log-probabilities and may not allow fine-tuning. We introduce Pinocchio, a suite of 8B checkpoints for assigning uncertainty estimates to predictions made by popular API models. To this end, we curate a large collection of hard datasets, ranging from long-context to vision-language, that expose conditions under which frontier models output incorrect responses. We then train Pinocchio to recognize the patterns in prompts and model responses that indicate confidence or uncertainty. Pinocchio checkpoints significantly outperform existing baselines for black-box uncertainty estimation in calibration metrics and transfer to unseen model families, including Meta, Anthropic, and Google, whose responses they were not trained on. We release code for adding uncertainty estimation to existing repos in only two additional lines of code.},
+  html={https://arxiv.org/abs/2609.24881},
+  abstract={In high-stakes decision-making applications of large language models (LLMs), practitioners require not only accurate LLMs but also uncertainty estimates for their predictions. Existing approaches to uncertainty estimation for LLMs require access to log-probabilities output by the model or require fine-tuning access. However, many industrial LLM products use closed-source API models, and many such API models like GPT do not return log-probabilities and may not allow fine-tuning. We introduce Pinocchio, an external calibrator that estimates the correctness of responses from black-box API models. Trained jointly on responses from seven LLMs, it achieves 0.862 AUROC predicting the correctness of held-out responses from those same models, and shows zero-shot transfer to thirteen unseen models across eight organizations. Our model needs only a single forward pass to generate an uncertainty estimate and requires no access to the target model's logits, weights, or internal states. A lightweight text only 0.8B checkpoint matches our largest model's AUROC. We release code for adding uncertainty estimation to existing repos in only two additional lines of code.},
   preview={pinocchio.jpg}
 }
 
